@@ -1,38 +1,86 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+/* container */
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+.header {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  font-family: cursive;
+  font-size: 28px;
 }
 
-.App-header {
-  background-color: #203bb6;
-  min-height: 100vh;
+.header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 130px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* cards */
+.card {
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* text card */
+.text-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: white;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.head {box-shadow: rgba(80, 80, 80, 0.329) 0px 11px 33px;
+display: flex; width: calc(100% - 160px);
+height: 70px;
+justify-content: space-between;
+padding: 0 80px;
+align-items: center;
 }
+.ka1 {
+font-size: 44px;
+font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.ka2 {margin-left: 460px;
+font-size: 44px;
+font-weight: bold;
+
+}
+.loo {font-size: 19px;
+  margin-top: 300px; margin-bottom: 40px;
+text-align: center;
+}
+.ka3 {
+display: flex;
+gap: 26px; align-items: center;
+font-size: 16px;
+}
+.kala {
+padding: 10px 20px;
+background-color: #1d273a; color: white;
+border-radius: 5px; font-weight: bold;
 }
